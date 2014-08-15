@@ -1,0 +1,13 @@
+.classpath
+.project
+*.iml
+*.ipr
+*.iws
+*.ids
+plugin.xml
+*.zip
+target
+*.swp
+web-app
+scripts
+*.ser
