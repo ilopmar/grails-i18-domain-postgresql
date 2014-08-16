@@ -41,7 +41,11 @@ Brief summary/description of the plugin.
     }
 
     def doWithSpring = {
-        // TODO Implement runtime spring config (optional)
+        i18nLocaleResolver(net.kaleidos.grails.plugins.i18n.resolver.I18nDefaultLocaleResolver)
+        i18Processor(net.kaleidos.grails.plugins.i18n.I18nProcessor) {
+            i18nLocaleResolver = ref("i18nLocaleResolver")
+            grailsApplication = ref("grailsApplication")
+        }
     }
 
     def doWithDynamicMethods = { ctx ->
