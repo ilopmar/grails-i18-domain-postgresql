@@ -40,9 +40,18 @@ grails.project.dependency.resolution = {
             export = false
         }
 
-        build ":release:3.0.1",
+        build ":tomcat:7.0.53",
+              ":release:3.0.1",
               ":rest-client-builder:1.0.3", {
             export = false
+        }
+
+        test ":code-coverage:1.2.7", {
+            export = false
+        }
+
+        compile ":postgresql-extensions:4.2.0", {
+            excludes "hibernate"
         }
     }
 }
