@@ -11,3 +11,7 @@ target
 web-app
 scripts
 *.ser
+*sublime*
+grails-app/views
+grails-app/controllers
+grails-app/conf/UrlMappings.groovy
